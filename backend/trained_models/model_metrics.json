@@ -1,0 +1,62 @@
+{
+  "models_benchmark": {
+    "Logistic Regression": {
+      "Accuracy": 0.4728,
+      "Accuracy_Std": 0.0628,
+      "Precision": 0.4125,
+      "Recall": 0.4728,
+      "F1_Score": 0.3742
+    },
+    "Multinomial Naive Bayes": {
+      "Accuracy": 0.4882,
+      "Accuracy_Std": 0.0737,
+      "Precision": 0.445,
+      "Recall": 0.4882,
+      "F1_Score": 0.4101
+    },
+    "Linear SVM": {
+      "Accuracy": 0.4228,
+      "Accuracy_Std": 0.0307,
+      "Precision": 0.2212,
+      "Recall": 0.4228,
+      "F1_Score": 0.2779
+    },
+    "Random Forest": {
+      "Accuracy": 0.4417,
+      "Accuracy_Std": 0.0327,
+      "Precision": 0.327,
+      "Recall": 0.4417,
+      "F1_Score": 0.3033
+    }
+  },
+  "best_model": "Logistic Regression",
+  "confusion_matrix": {
+    "labels": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "matrix": [
+      [
+        1,
+        8,
+        0
+      ],
+      [
+        1,
+        10,
+        0
+      ],
+      [
+        1,
+        5,
+        0
+      ]
+    ]
+  },
+  "topic_metrics": {
+    "n_topics": 5,
+    "perplexity": 356.14,
+    "coherence_cv_score": 0.485
+  }
+}
