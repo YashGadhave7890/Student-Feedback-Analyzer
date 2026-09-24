@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "text": "The course was fantastic, the lectures were crystal clear, and the lab assignments really helped me learn.",
+    "expected_sentiment": "positive",
+    "category": "pure_positive"
+  },
+  {
+    "id": 2,
+    "text": "I really enjoyed using Docker and Power BI in the practical sessions. Excellent guidance from the professor.",
+    "expected_sentiment": "positive",
+    "category": "pure_positive"
+  },
+  {
+    "id": 3,
+    "text": "The course content was logically organized and easy to follow. Overall a great learning experience.",
+    "expected_sentiment": "positive",
+    "category": "pure_positive"
+  },
+  {
+    "id": 4,
+    "text": "The lecture slides covered standard topics and pacing was okay. Nothing particularly exciting or bad.",
+    "expected_sentiment": "neutral",
+    "category": "pure_neutral"
+  },
+  {
+    "id": 5,
+    "text": "The lectures were fine, but having a few more summary revision sessions at the end would be helpful.",
+    "expected_sentiment": "neutral",
+    "category": "constructive_neutral"
+  },
+  {
+    "id": 6,
+    "text": "Covered regression, clustering and time series forecasting. Some modules could use more business case studies.",
+    "expected_sentiment": "neutral",
+    "category": "topical_listing_neutral"
+  },
+  {
+    "id": 7,
+    "text": "The lecture slides were terribly long and confusing. Reading for the CAT was very difficult and frustrating.",
+    "expected_sentiment": "negative",
+    "category": "pure_negative"
+  },
+  {
+    "id": 8,
+    "text": "Very poor teaching quality. The instructions were disorganized and the instructor did not explain concepts clearly.",
+    "expected_sentiment": "negative",
+    "category": "pure_negative"
+  },
+  {
+    "id": 9,
+    "text": "The lab instructions were not clear and the teaching assistants provided no assistance when we got stuck.",
+    "expected_sentiment": "negative",
+    "category": "negation_negative"
+  },
+  {
+    "id": 10,
+    "text": "The professor was engaging and labs were fun, but the slide decks were completely overwhelming to revise for exams.",
+    "expected_sentiment": "neutral",
+    "category": "mixed_feedback"
+  }
+]

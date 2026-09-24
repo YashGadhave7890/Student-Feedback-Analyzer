@@ -32,6 +32,28 @@ except Exception:
 DOMAIN_STOPWORDS = {"course", "unit", "class", "classes", "teacher", "lecturer", "learning", "teaching", "students", "student"}
 ALL_STOPWORDS = STOP_WORDS.union(DOMAIN_STOPWORDS)
 
+NEGATION_WORDS = {
+    "not", "no", "never", "nor", "neither", "cannot", "hardly", "barely", 
+    "none", "without", "nothing", "lack", "bare", "hard"
+}
+SENTIMENT_STOPWORDS = STOP_WORDS.difference(NEGATION_WORDS)
+
+CONTRACTIONS = {
+    r"can't": "cannot",
+    r"won't": "will not",
+    r"n't": " not",
+    r"doesn't": "does not",
+    r"don't": "do not",
+    r"didn't": "did not",
+    r"isn't": "is not",
+    r"wasn't": "was not",
+    r"haven't": "have not",
+    r"hasn't": "has not",
+    r"couldn't": "could not",
+    r"shouldn't": "should not",
+    r"wouldn't": "would not",
+}
+
 try:
     lemmatizer = WordNetLemmatizer()
     lemmatizer.lemmatize("testing")
@@ -53,19 +75,24 @@ def clean_text_basic(text: str) -> str:
 
 
 def clean_text_for_sentiment(text: str) -> str:
-    """Enhanced cleaning for sentiment analysis with tokenization & lemmatization."""
+    """Enhanced cleaning for sentiment analysis with negation preservation & lemmatization."""
     if not text:
         return ""
-    text = str(text).lower()
-    text = re.sub(r'[^a-zA-Z\s]', ' ', text)
+    text_str = str(text).lower()
+    
+    # Expand contractions to preserve negations
+    for pattern, rep in CONTRACTIONS.items():
+        text_str = re.sub(pattern, rep, text_str)
+        
+    text_str = re.sub(r'[^a-zA-Z\s]', ' ', text_str)
     
     try:
-        tokens = nltk.word_tokenize(text)
+        tokens = nltk.word_tokenize(text_str)
     except Exception:
-        tokens = text.split()
+        tokens = text_str.split()
     
-    # Filter stopwords but preserve negations if any
-    filtered = [w for w in tokens if w not in STOP_WORDS and len(w) > 1]
+    # Filter stopwords but preserve negations
+    filtered = [w for w in tokens if w not in SENTIMENT_STOPWORDS and len(w) > 1]
     
     if USE_LEMMATIZER:
         try:

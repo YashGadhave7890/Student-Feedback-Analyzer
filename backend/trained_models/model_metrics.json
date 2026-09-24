@@ -1,32 +1,36 @@
 {
   "models_benchmark": {
     "Logistic Regression": {
-      "Accuracy": 0.4728,
-      "Accuracy_Std": 0.0628,
-      "Precision": 0.4125,
-      "Recall": 0.4728,
-      "F1_Score": 0.3742
-    },
-    "Multinomial Naive Bayes": {
-      "Accuracy": 0.4882,
-      "Accuracy_Std": 0.0737,
-      "Precision": 0.445,
-      "Recall": 0.4882,
-      "F1_Score": 0.4101
+      "Accuracy": 0.5783,
+      "Accuracy_Std": 0.05,
+      "Macro_F1": 0.525,
+      "F1_Score": 0.5737,
+      "Precision": 0.577,
+      "Recall": 0.5783
     },
     "Linear SVM": {
-      "Accuracy": 0.4228,
-      "Accuracy_Std": 0.0307,
-      "Precision": 0.2212,
-      "Recall": 0.4228,
-      "F1_Score": 0.2779
+      "Accuracy": 0.5639,
+      "Accuracy_Std": 0.0246,
+      "Macro_F1": 0.4001,
+      "F1_Score": 0.5232,
+      "Precision": 0.4909,
+      "Recall": 0.5639
+    },
+    "Multinomial Naive Bayes": {
+      "Accuracy": 0.5229,
+      "Accuracy_Std": 0.0362,
+      "Macro_F1": 0.4212,
+      "F1_Score": 0.5056,
+      "Precision": 0.5011,
+      "Recall": 0.5229
     },
     "Random Forest": {
-      "Accuracy": 0.4417,
-      "Accuracy_Std": 0.0327,
-      "Precision": 0.327,
-      "Recall": 0.4417,
-      "F1_Score": 0.3033
+      "Accuracy": 0.6096,
+      "Accuracy_Std": 0.0408,
+      "Macro_F1": 0.4733,
+      "F1_Score": 0.5836,
+      "Precision": 0.5801,
+      "Recall": 0.6096
     }
   },
   "best_model": "Logistic Regression",
@@ -38,25 +42,197 @@
     ],
     "matrix": [
       [
-        1,
+        27,
         8,
-        0
+        2
+      ],
+      [
+        13,
+        17,
+        5
       ],
       [
         1,
-        10,
-        0
-      ],
-      [
-        1,
-        5,
-        0
+        7,
+        3
       ]
     ]
+  },
+  "per_class_metrics": {
+    "positive": {
+      "precision": 0.6585,
+      "recall": 0.7297,
+      "f1_score": 0.6923,
+      "support": 37
+    },
+    "neutral": {
+      "precision": 0.5312,
+      "recall": 0.4857,
+      "f1_score": 0.5075,
+      "support": 35
+    },
+    "negative": {
+      "precision": 0.3,
+      "recall": 0.2727,
+      "f1_score": 0.2857,
+      "support": 11
+    }
   },
   "topic_metrics": {
     "n_topics": 5,
     "perplexity": 356.14,
     "coherence_cv_score": 0.485
+  },
+  "feature_importance": {
+    "negative": [
+      {
+        "token": "not",
+        "weight": 0.8333
+      },
+      {
+        "token": "background",
+        "weight": 0.6873
+      },
+      {
+        "token": "never",
+        "weight": 0.6646
+      },
+      {
+        "token": "exam",
+        "weight": 0.6498
+      },
+      {
+        "token": "disorganized",
+        "weight": 0.6206
+      },
+      {
+        "token": "completely",
+        "weight": 0.6017
+      },
+      {
+        "token": "point",
+        "weight": 0.5886
+      },
+      {
+        "token": "overwhelming",
+        "weight": 0.5777
+      },
+      {
+        "token": "comment",
+        "weight": 0.5557
+      },
+      {
+        "token": "lecture",
+        "weight": 0.5434
+      },
+      {
+        "token": "derivation",
+        "weight": 0.5403
+      },
+      {
+        "token": "server",
+        "weight": 0.5349
+      }
+    ],
+    "neutral": [
+      {
+        "token": "none",
+        "weight": 0.5174
+      },
+      {
+        "token": "would",
+        "weight": 0.4906
+      },
+      {
+        "token": "okay",
+        "weight": 0.4708
+      },
+      {
+        "token": "le",
+        "weight": 0.4656
+      },
+      {
+        "token": "slide",
+        "weight": 0.3966
+      },
+      {
+        "token": "note",
+        "weight": 0.3619
+      },
+      {
+        "token": "standard",
+        "weight": 0.3146
+      },
+      {
+        "token": "reduce",
+        "weight": 0.302
+      },
+      {
+        "token": "apis",
+        "weight": 0.2665
+      },
+      {
+        "token": "bulky",
+        "weight": 0.2492
+      },
+      {
+        "token": "many",
+        "weight": 0.2471
+      },
+      {
+        "token": "shorter",
+        "weight": 0.2353
+      }
+    ],
+    "positive": [
+      {
+        "token": "practical",
+        "weight": 0.7782
+      },
+      {
+        "token": "concept",
+        "weight": 0.5907
+      },
+      {
+        "token": "liked",
+        "weight": 0.5409
+      },
+      {
+        "token": "module",
+        "weight": 0.4724
+      },
+      {
+        "token": "use",
+        "weight": 0.461
+      },
+      {
+        "token": "engaging",
+        "weight": 0.4332
+      },
+      {
+        "token": "lab quiz",
+        "weight": 0.4048
+      },
+      {
+        "token": "group work",
+        "weight": 0.3841
+      },
+      {
+        "token": "learning",
+        "weight": 0.382
+      },
+      {
+        "token": "work",
+        "weight": 0.3651
+      },
+      {
+        "token": "lecturer",
+        "weight": 0.3479
+      },
+      {
+        "token": "well",
+        "weight": 0.3409
+      }
+    ]
   }
 }

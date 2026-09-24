@@ -1,0 +1,56 @@
+id,text,sentiment,category,rationale
+supp_neg_001,"The professor spoke too fast, skipped key derivations, and dismissed questions during lecture.",negative,teaching_quality,"Clear dissatisfaction with teaching pace, explanation depth, and student interaction."
+supp_neg_002,"The lab instructions were disorganized, outdated, and full of broken links and syntax errors.",negative,labs,Explicit criticism of lab material quality and lack of maintenance.
+supp_neg_003,Grading rubrics were extremely vague and assignments took over two months to be returned.,negative,assessment,Strong dissatisfaction with unfair evaluation standards and delayed feedback.
+supp_neg_004,The lecture slides were overwhelming with over 150 dense text-heavy slides per session.,negative,materials,Severe complaint regarding unmanageable slide volume and poor pedagogical presentation.
+supp_neg_005,The virtual machine environment kept crashing and we received no technical support during the lab.,negative,infrastructure,Technical failure obstructing learning without adequate teaching assistance.
+supp_neg_006,Teaching assistants were unhelpful and never responded to questions posted on the discussion forum.,negative,communication,Explicit grievance regarding unavailable and unsupportive teaching staff.
+supp_neg_007,The workload was completely unreasonable with three major project deadlines falling in the same week.,negative,pacing,Severe scheduling issue causing excessive student stress and unmanageable workload.
+supp_neg_008,Exams tested minor footnotes rather than the core analytical principles taught during lectures.,negative,assessment,Unfair assessment alignment that contradicts learning objectives.
+supp_neg_009,The lecturer frequently arrived 20 minutes late and cancelled multiple office hour sessions.,negative,teaching_quality,Unprofessional attendance and lack of student availability.
+supp_neg_010,The code samples provided did not run on Python 3 and had missing dependency instructions.,negative,materials,Defective educational resources hindering assignment completion.
+supp_neg_011,Very poor explanation of neural networks and time series analysis. I was completely lost.,negative,teaching_quality,Direct expression of confusion caused by deficient instructional delivery.
+supp_neg_012,Group assignments were unfair because free-riders received identical marks without contributing.,negative,assessment,Systemic inequity in group grading policy.
+supp_neg_013,Audio quality in the recorded lectures was awful with constant background noise and echo.,negative,materials,Unusable multimedia resources impairing study.
+supp_neg_014,The textbook was mandatory and expensive but never actually referenced or used in class.,negative,materials,Unnecessary financial burden with zero pedagogical utility.
+supp_neg_015,Not enough time was given to finish the coding exam and the server crashed during submission.,negative,assessment,High-stakes testing malfunction and unreasonable time constraint.
+supp_neg_016,I felt unprepared for the real world because practical coding was barely covered.,negative,curriculum,Disappointment with excessive theory and lack of practical skill development.
+supp_neg_017,The feedback on my essay was just a grade with zero written comments or explanation.,negative,assessment,Absence of formative feedback preventing student learning.
+supp_neg_018,Lectures were monotonous and simply reading bullet points off the slides with no enthusiasm.,negative,teaching_quality,Lack of engagement and ineffective pedagogical delivery.
+supp_neg_019,Prerequisites were not clearly communicated and the math background assumed was too advanced.,negative,curriculum,Misleading course requirements leading to extreme student struggle.
+supp_neg_020,The course felt like a disorganized crash course where topics were randomly thrown together.,negative,course_structure,Lack of coherent syllabus progression and thematic structure.
+supp_neg_021,The database lab server was constantly down during peak submission hours.,negative,infrastructure,Unreliable lab infrastructure severely impacting student deliverables.
+supp_neg_022,Not worth the tuition fees; the content can easily be learned on free YouTube tutorials.,negative,general,Low perceived course value and quality.
+supp_neg_023,The instructor was dismissive of student difficulties and refused to clarify assignment requirements.,negative,teaching_quality,Unsupportive educator behavior creating a hostile learning environment.
+supp_neg_024,Too much theory and unnecessary derivations without ever demonstrating how to apply them in code.,negative,curriculum,Imbalance toward non-practical content.
+supp_neg_025,The final exam contained questions from topics explicitly excluded from the revision outline.,negative,assessment,Breach of syllabus guidelines in formal evaluation.
+supp_pos_001,The professor gave fantastic lectures with intuitive explanations and real-world industrial case studies.,positive,teaching_quality,Enthusiastic praise for instructional clarity and practical industry relevance.
+supp_pos_002,Hands-on Docker and Power BI lab sessions were extremely engaging and deepened my understanding.,positive,labs,Strong positive appraisal of technical tool mastery and practical exercises.
+supp_pos_003,"Teaching assistants provided prompt, thorough, and highly encouraging feedback on all assignments.",positive,communication,Appreciation for supportive mentorship and quality feedback.
+supp_pos_004,"The course materials were exceptionally well structured, concise, and easy to navigate.",positive,materials,High satisfaction with syllabus organization and document design.
+supp_pos_005,I really enjoyed how theory in morning sessions was immediately reinforced with afternoon coding labs.,positive,course_structure,Praise for pedagogical alignment between theoretical concepts and practical application.
+supp_pos_006,Clear grading criteria and helpful rubrics made expectations transparent and fair from day one.,positive,assessment,Appreciation for fair and transparent grading.
+supp_pos_007,The instructor fostered an inclusive and highly participative classroom atmosphere where everyone felt comfortable.,positive,teaching_quality,Praise for positive learning culture and student engagement.
+supp_pos_008,Step-by-step Jupyter notebooks and code walkthroughs made complex algorithms accessible and fun.,positive,materials,Satisfaction with guided interactive coding resources.
+supp_pos_009,Outstanding course that gave me the exact skills and portfolio projects needed for data engineering internships.,positive,general,High value career preparedness and practical competency development.
+supp_pos_010,The lecturer always made time for questions and held extra review sessions before exams.,positive,teaching_quality,Appreciation for educator dedication and supplementary exam preparation.
+supp_pos_011,Great balance of individual practice and collaborative teamwork on data pipelines.,positive,course_structure,Positive evaluation of collaborative learning.
+supp_pos_012,The quizzes after each module were super helpful for self-assessing understanding before moving forward.,positive,assessment,Appreciation for formative modular assessment.
+supp_pos_013,"Excellent explanations of difficult topics like clustering, dimensionality reduction, and API deployment.",positive,teaching_quality,Specific praise for conceptual clarity on advanced subjects.
+supp_pos_014,I loved the capstone project because it allowed us to work with real company datasets.,positive,labs,Enthusiastic engagement with authentic industry problem solving.
+supp_pos_015,"The instructor was very energetic, passionate, and inspiring throughout the entire semester.",positive,teaching_quality,Positive educator charisma and motivating instructional delivery.
+supp_neu_001,"The syllabus covered regression, clustering, time series forecasting, and natural language processing.",neutral,curriculum,Purely descriptive topical listing without sentiment expression.
+supp_neu_002,Lectures were scheduled twice a week on Tuesdays and Thursdays from two to four in the afternoon.,neutral,general,Factual logistical statement.
+supp_neu_003,"The course utilized Python, R Studio, Jupyter Notebooks, and PostgreSQL for assignments.",neutral,materials,Factual list of software tools and technologies.
+supp_neu_004,"Assessment consisted of three quizzes, two lab submissions, and a final written examination.",neutral,assessment,Descriptive course evaluation breakdown.
+supp_neu_005,The pacing was standard and lecture slides were uploaded to the portal after class.,neutral,general,Neutral observation of course routine and administration.
+supp_neu_006,Adding a few more practice questions at the end of each slide deck would be helpful for revision.,neutral,recommendation,Polite constructive suggestion without negative grievance or emotional polarity.
+supp_neu_007,Consider allocating fifteen minutes at the end of class for group discussion and question review.,neutral,recommendation,Constructive pedagogical recommendation.
+supp_neu_008,The content met standard curriculum requirements and followed the published syllabus outline.,neutral,curriculum,Objective statement of course alignment.
+supp_neu_009,Recommended readings were taken from the standard Business Intelligence textbook chapters three through eight.,neutral,materials,Factual citation of reading materials.
+supp_neu_010,It would be nice to have optional advanced exercises for students who finish the baseline lab early.,neutral,recommendation,Constructive extension suggestion without dissatisfaction.
+supp_neu_011,The course is divided into Business Intelligence I for theory and Business Intelligence II for applications.,neutral,curriculum,Factual organizational description.
+supp_neu_012,Students worked in pairs during in-person lab sessions.,neutral,labs,Objective operational statement.
+supp_neu_013,Weekly office hours were conducted in room 302 and via video conference.,neutral,communication,Factual scheduling information.
+supp_neu_014,A brief summary cheat sheet for Docker commands would be a convenient reference for future cohorts.,neutral,recommendation,Constructive suggestion for auxiliary material.
+supp_neu_015,Course grades were weighted fifty percent coursework and fifty percent final assessment.,neutral,assessment,Factual grading rubric description.
