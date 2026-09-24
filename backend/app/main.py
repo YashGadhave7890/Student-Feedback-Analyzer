@@ -1,3 +1,4 @@
+import os
 import sys
 from pathlib import Path
 from fastapi import FastAPI
@@ -18,16 +19,28 @@ app = FastAPI(
 
 # Enable CORS for frontend clients (development + production domains)
 origins = [
+    "https://student-feedback-analyzer-chi.vercel.app",
+    "https://student-feedback-analyzer-api.onrender.com",
     "http://localhost:5173",
     "http://localhost:3000",
+    "http://localhost:4173",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:3000",
-    "*"
+    "http://127.0.0.1:4173",
 ]
+
+# Allow custom origins via environment variable if specified
+env_origins = os.getenv("ALLOWED_ORIGINS", "")
+if env_origins:
+    for orig in env_origins.split(","):
+        clean_orig = orig.strip()
+        if clean_orig and clean_orig not in origins:
+            origins.append(clean_orig)
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

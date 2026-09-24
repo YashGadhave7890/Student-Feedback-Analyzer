@@ -166,3 +166,31 @@ def test_get_models():
     assert "Random Forest" in data["models_benchmark"]
     assert data["best_model"] == "Logistic Regression"
     assert len(data["confusion_matrix"]["matrix"]) == 3
+
+
+def test_cors_configuration():
+    """Test CORS preflight and headers for production Vercel frontend and localhost"""
+    # 1. Production Vercel Origin
+    res_vercel = client.options(
+        "/api/health",
+        headers={
+            "Origin": "https://student-feedback-analyzer-chi.vercel.app",
+            "Access-Control-Request-Method": "GET",
+            "Access-Control-Request-Headers": "content-type",
+        },
+    )
+    assert res_vercel.status_code == 200
+    assert (
+        res_vercel.headers.get("access-control-allow-origin")
+        == "https://student-feedback-analyzer-chi.vercel.app"
+    )
+    assert res_vercel.headers.get("access-control-allow-credentials") == "true"
+
+    # 2. Localhost Origin
+    res_local = client.get(
+        "/api/health",
+        headers={"Origin": "http://localhost:5173"},
+    )
+    assert res_local.status_code == 200
+    assert res_local.headers.get("access-control-allow-origin") == "http://localhost:5173"
+    assert res_local.headers.get("access-control-allow-credentials") == "true"
